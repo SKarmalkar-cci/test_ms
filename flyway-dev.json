@@ -24,7 +24,8 @@
           "url": "jdbc:sqlserver://CCI-LPT-278\\MSSQLSERVER2K17;databaseName=test_ms_prod;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
         }
       }
-    ]
+    ],
+    "generateUndoScripts": true
   },
   "developmentDatabase": {
     "connectionProvider": {
