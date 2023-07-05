@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "name": "test_ms",
+  "id": "d4bbed80-1751-46c4-af42-f2879ed88e40",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ]
+  },
+  "developmentDatabase": {
+    "connectionProvider": {
+      "type": "UsernamePassword",
+      "url": "jdbc:sqlserver://CCI-LPT-278\\MSSQLSERVER2K17;databaseName=test_ms;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+    },
+    "displayName": "Development database"
+  },
+  "schemas": []
+}
