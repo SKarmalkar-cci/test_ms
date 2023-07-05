@@ -9,6 +9,21 @@
   "deployment": {
     "flywayConfFiles": [
       "./flyway.conf"
+    ],
+    "shadowDatabase": {
+      "connectionProvider": {
+        "type": "UsernamePassword",
+        "url": "jdbc:sqlserver://CCI-LPT-278\\MSSQLSERVER2K17;databaseName=test_ms_shadow1;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+      },
+      "displayName": "Shadow database"
+    },
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:sqlserver://CCI-LPT-278\\MSSQLSERVER2K17;databaseName=test_ms_prod;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+        }
+      }
     ]
   },
   "developmentDatabase": {
