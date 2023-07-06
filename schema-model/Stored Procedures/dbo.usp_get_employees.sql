@@ -14,6 +14,6 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 
-select * from employees
+select top 10 * from employees
 END
 GO
